@@ -5,7 +5,7 @@
 
 If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people seem to zone out or multi-task during long zoom calls, and then don't hear or panic when their name is mentioned and they're not prepared to respond. I joked that I could build an AI device that could listen for your name to be spoken and then alert you. I got it working in just a few hours:
 
-<iframe width="315" height="560" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="315" height="560" align="center" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In my reading about TinyML, I came across [Edge Impulse](https://www.edgeimpulse.com/) which has incredible software that allows even beginners to create embedded AI models. Edge Impulse offers an _almost_ no-code offering (you'll still need to be comfortable working with a command line, and knowledge of C++ is helpful to work with the Arduino interface) to collecting data, building/validating a model, and deploying the model to a microcontroller. I loosely followed [this tutorial](https://docs.edgeimpulse.com/docs/responding-to-your-voice) from Edge Impulse. 
 
@@ -46,7 +46,7 @@ In the `loop()` function on the Arduino, the audio sensor is constantly running 
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no" align="center" width="400" >
 
 Check out another video of the device in action:
-<iframe width="315" height="560" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="315" height="560" align="center" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Further work
