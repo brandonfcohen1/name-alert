@@ -1,5 +1,4 @@
-# Using TinyML 
-
+# Using TinyML and Ardunio to alert when your name is called on a conference call
 
 
 ## Project Summary
@@ -42,29 +41,13 @@ We need to turn the model into a format which can run on the Arduino, which woul
 
 In the `loop()` function on the Arduino, the audio sensor is constantly running samples through the model and calculating the "probability" that the word "Brandon" has been heard. If this happens, a function will be triggered to output a pulse out of a given pin to flash an LED for 1 second. My simple circuit:
 
-![Circuit](https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no | width=500)
 
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no" align="center" width="400" >
 
-```markdown
-Syntax highlighted code block
+In action:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Support or Contact
 
