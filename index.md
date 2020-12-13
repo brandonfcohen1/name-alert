@@ -6,7 +6,7 @@
 If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people seem to zone out or multi-task during long zoom calls, and then don't hear or panic when their name is mentioned and they're not prepared to respond. I joked that I could build an AI device that could listen for your name to be spoken and then alert you. I got it working in just a few hours:
 
 <div align="center">
-<iframe width="300" height="500" align="center" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe height="500" align="center" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 In my reading about TinyML, I came across [Edge Impulse](https://www.edgeimpulse.com/) which has incredible software that allows even beginners to create embedded AI models. Edge Impulse offers an _almost_ no-code offering (you'll still need to be comfortable working with a command line, and knowledge of C++ is helpful to work with the Arduino interface) to collecting data, building/validating a model, and deploying the model to a microcontroller. I loosely followed [this tutorial](https://docs.edgeimpulse.com/docs/responding-to-your-voice) from Edge Impulse. 
@@ -50,7 +50,7 @@ In the `loop()` function on the Arduino, the audio sensor is constantly running 
 
 Check out another video of the device in action:
 <div align="center">
-<iframe width="315" height="560" align="center" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<iframe height="560" align="center" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 ## Further work
@@ -59,4 +59,4 @@ As I said, this was only just for fun and to create a basic example. A proper im
 
 ### Interested in learning more?
 
-Get in touch over email at [brandon.f.cohen@gmail.com](mailto:brandon.f.cohen@gmail.com). Check out some of my other projects at https://www.brandonfcohen.com/.
+Get in touch over email at [brandon.f.cohen@gmail.com](mailto:brandon.f.cohen@gmail.com). Check out some of my other projects at [https://www.brandonfcohen.com](https://www.brandonfcohen.com).
