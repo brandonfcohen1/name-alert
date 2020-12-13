@@ -3,7 +3,9 @@
 
 ## Project Summary
 
-If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people seem to zone out or multi-task during long zoom calls, and then don't hear or panic when their name is mentioned and they're not prepared to respond. I joked that I could build an AI device that could listen for your name to be spoken and then alert you.
+If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people seem to zone out or multi-task during long zoom calls, and then don't hear or panic when their name is mentioned and they're not prepared to respond. I joked that I could build an AI device that could listen for your name to be spoken and then alert you. I got it working in just a few hours:
+
+<iframe width="315" height="560" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In my reading about TinyML, I came across [Edge Impulse](https://www.edgeimpulse.com/) which has incredible software that allows even beginners to create embedded AI models. Edge Impulse offers an _almost_ no-code offering (you'll still need to be comfortable working with a command line, and knowledge of C++ is helpful to work with the Arduino interface) to collecting data, building/validating a model, and deploying the model to a microcontroller. I loosely followed [this tutorial](https://docs.edgeimpulse.com/docs/responding-to-your-voice) from Edge Impulse. 
 
@@ -39,16 +41,18 @@ In theory I would have spent much more time testing and perfecting this model, b
 
 We need to turn the model into a format which can run on the Arduino, which would either be compiled binary or Arduino code (essentially, C++). Both Edge Impulse and TensorFlow Lite have several options for this step. I exported my model from Edge Impulse directly to Arduino code which I then modified to tinker with a simple LED circuit. Edge Impulse created the C++ and header files needed to run the classifier, so I just needed to write some simple logic to flash an LED when the model detected that "Brandon" was heard.
 
-In the `loop()` function on the Arduino, the audio sensor is constantly running samples through the model and calculating the "probability" that the word "Brandon" has been heard. If this happens, a function will be triggered to output a pulse out of a given pin to flash an LED for 1 second. My simple circuit:
-
+In the `loop()` function on the Arduino, the audio sensor is constantly running samples through the model and calculating the "probability" that the word "Brandon" has been heard. If this happens, a function will be triggered to output a pulse out of a given pin to flash an LED for 1 second. My simple circuit, powered by AA batteries:
 
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no" align="center" width="400" >
 
-In action:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Check out another video of the device in action:
+<iframe width="315" height="560" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qb80EbZbcvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Support or Contact
+## Further work
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+As I said, this was only just for fun and to create a basic example. A proper implementation of this concept would require considerably more training data and model tuning. Of course, simply flashing a light when your name is called might not even be that useful, since by the time your name is called, it's already too late if you're not paying attention! Maybe what I actually need to build is a model that can _predict_ when your name will come up... 
+
+### Interested in learning more?
+
+Get in touch over email at [brandon.f.cohen@gmail.com](mailto:brandon.f.cohen@gmail.com). Check out some of my other projects at https://www.brandonfcohen.com/.
