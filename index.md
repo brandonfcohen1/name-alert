@@ -8,6 +8,7 @@ If you've been working from home during the COVID-19 pandemic, I'm sure you've e
 <div align="center">
 <iframe height="500" align="center" src="https://www.youtube.com/embed/MzTY79iMFFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+<br>
 
 In my reading about TinyML, I came across [Edge Impulse](https://www.edgeimpulse.com/) which has incredible software that allows even beginners to create embedded AI models. Edge Impulse offers an _almost_ no-code offering (you'll still need to be comfortable working with a command line, and knowledge of C++ is helpful to work with the Arduino interface) to collecting data, building/validating a model, and deploying the model to a microcontroller. I loosely followed [this tutorial](https://docs.edgeimpulse.com/docs/responding-to-your-voice) from Edge Impulse. 
 
