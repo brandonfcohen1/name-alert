@@ -42,7 +42,7 @@ We need to turn the model into a format which can run on the Arduino, which woul
 
 In the `loop()` function on the Arduino, the audio sensor is constantly running samples through the model and calculating the "probability" that the word "Brandon" has been heard. If this happens, a function will be triggered to output a pulse out of a given pin to flash an LED for 1 second. My simple circuit:
 
-![Circuit](https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no)
+![Circuit](https://lh3.googleusercontent.com/pw/ACtC-3eT-Za5hTkJAyJy_fr9ofvx10VjzJcfKUnzGjGrWc1pWkp1eT63igqbRzIEaWIwrSuIoZGtl6OAkX0JbSHLpTmexLHSkohCD93DXB4tqcwnocXdyyI5Dtm2w86TQWQTLd5pqDWxzTnUGRt7fn4L1UBNuQ=w1198-h1596-no | width=500)
 
 
 ```markdown
