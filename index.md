@@ -3,7 +3,7 @@
 
 ## Project Summary
 
-If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people seem to zone out or multi-task during long zoom calls, and then don't hear or panic when their name is mentioned and they're not prepared to respond. I joked that I could build an AI device that could listen for your name to be spoken and then alert you. 
+If you've been working from home during the COVID-19 pandemic, I'm sure you've experienced "[Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)". I was joking with a few friends recently that so many people zone out or multi-task during long zoom calls, and then don’t hear and/or panic when their name is called. I joked that I could build an AI device that could listen for your name to be spoken and then alert you. 
 
 In a few hours I got this working!
 
